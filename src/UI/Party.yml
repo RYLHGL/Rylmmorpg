@@ -1,0 +1,178 @@
+Surface_UI:
+  Contents:
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"Invite Player","font":"uniform","color":"green","bold":true,"italic":false}'
+        lore:
+          - '{"text":"Type Command ===> /party invite <UserName>","font":"uniform","color":"gold","bold":true,"italic":false}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 32ddfc8c-ca3a-44d2-a3f6-43b5e055b098
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZmMzE0MzFkNjQ1ODdmZjZlZjk4YzA2NzU4MTA2ODFmOGMxM2JmOTZmNTFkOWNiMDdlZDc4NTJiMmZmZDEifX19
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"Public","font":"uniform","color":"green","bold":true,"italic":false}'
+        lore:
+          - '{"text":"Allow anyone to apply to join your party","font":"uniform","color":"gold","bold":true,"italic":false}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 74e987f9-1fdb-4c34-92b0-45e92ec91750
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTRkNjFlYmMyOWM2MDk3MjQwNTNlNDJmNjE1YmM3NDJhMTZlZjY4Njk2MTgyOWE2ZDAxMjcwNDUyOWIxMzA4NSJ9fX0=
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"Leave","font":"uniform","color":"red","bold":true,"italic":false}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: eab805c4-ba36-4baa-841f-35031d956453
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTljZGI5YWYzOGNmNDFkYWE1M2JjOGNkYTc2NjVjNTA5NjMyZDE0ZTY3OGYwZjE5ZjI2M2Y0NmU1NDFkOGEzMCJ9fX0=
+  Size: 27

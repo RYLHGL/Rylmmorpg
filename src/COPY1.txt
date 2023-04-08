@@ -1,0 +1,243 @@
+package PluginFiles
+
+
+import io.github.retrooper.packetevents.PacketEvents
+import io.github.retrooper.packetevents.event.PacketListener
+import io.github.retrooper.packetevents.event.annotation.PacketHandler
+import io.github.retrooper.packetevents.event.impl.PacketPlayReceiveEvent
+import io.github.retrooper.packetevents.event.impl.PacketPlaySendEvent
+import org.bukkit.Bukkit
+import org.bukkit.Material
+import org.bukkit.command.Command
+import org.bukkit.command.CommandExecutor
+import org.bukkit.command.CommandSender
+import org.bukkit.configuration.file.YamlConfiguration
+import org.bukkit.entity.Player
+import org.bukkit.event.EventHandler
+import org.bukkit.event.Listener
+import org.bukkit.event.inventory.InventoryClickEvent
+import org.bukkit.event.inventory.InventoryDragEvent
+import org.bukkit.event.player.PlayerMoveEvent
+import org.bukkit.inventory.ItemStack
+import org.bukkit.plugin.java.JavaPlugin
+import org.bukkit.util.Vector
+import java.io.File
+import java.nio.file.Files
+import java.nio.file.StandardCopyOption
+
+val main_dir = "plugins/Ryl_UI"
+var MC_VERSION = ""
+var command_for_set_item_in_gui = ""
+var GUI_TITLE = ""
+var GUI_Page = 1
+var GUI_TITLE_FOR_FUNCTION = ""
+var Message = ""
+
+var File_Path_1 = ""
+var File_Name_1 = ""
+var Yml_1 = YamlConfiguration.loadConfiguration(File(File_Path_1))
+
+//######################################################################################################################
+class Main: JavaPlugin(), Listener, CommandExecutor, PacketListener {
+//######################################################################################################################
+    override fun onLoad() {
+        Bukkit.getLogger().info("Plugin loaded!")
+        PacketEvents().load()
+    }
+
+    override fun onEnable() {
+
+        if (!File(main_dir).exists()) {
+            File(main_dir).mkdir()
+        }
+        if (!File("$main_dir/GUI_List.yml").exists()) {
+            File("$main_dir/GUI_List.yml").createNewFile()
+        }
+        if (!File("$main_dir/Global_Market.yml").exists()) {
+            File("$main_dir/Global_Market.yml").createNewFile()
+        }
+        var NEW_FILE = this.javaClass.classLoader.getResourceAsStream("Note.txt")!!
+        Files.copy(NEW_FILE, File("$main_dir/Note.txt").toPath(), StandardCopyOption.REPLACE_EXISTING)
+
+        PacketEvents().init()
+        //PacketEvents().registerListener(this)
+        Bukkit.getPluginManager().registerEvents(this, this)
+
+    }
+
+    override fun onDisable() {
+        PacketEvents().stop()
+    }
+//######################################################################################################################
+    var Player_In_Event = Bukkit.getPlayer("")
+    var P_location = Player_In_Event!!.location.clone()
+    var menu_gui_1 = Bukkit.createInventory(null, 54, "None")
+    var menu_gui_2 = Bukkit.createInventory(null, 54, "None")
+    var ITEMSTACK = ItemStack(Material.AIR)
+    var ITEMSTACK_mdf = ITEMSTACK.itemMeta
+//######################################################################################################################
+    override fun onCommand(cmd_sender: CommandSender, command: Command, label: String, args: Array<out String>): Boolean {
+
+        if (cmd_sender is Player) {
+            when (command.name) {
+                "rui" -> {
+                    Player_In_Event = cmd_sender
+                    MC_Version_Detection()
+                    GUI_Page = 1
+                    GUI_TITLE_FOR_FUNCTION = "GUI_List"
+                    List_Style_GUI()
+                }
+                "gmkt" ->{
+                    Player_In_Event = cmd_sender
+                    MC_Version_Detection()
+                    GUI_Page = 1
+                    GUI_TITLE_FOR_FUNCTION = "Global_Market"
+                    List_Style_GUI()
+                }
+            }
+        }
+        return true
+    }
+//######################################################################################################################
+    @PacketHandler
+    fun Packet_REC(e:PacketPlayReceiveEvent){
+
+
+    }
+    fun Packet_SEND(e:PacketPlaySendEvent){
+
+    }
+//######################################################################################################################
+    fun MC_Version_Detection(){
+        MC_VERSION = Bukkit.getBukkitVersion().split("_","-",".")[1]
+        if (Bukkit.getBukkitVersion().startsWith("1.")){
+            if (MC_VERSION.toInt() <= 16){
+                command_for_set_item_in_gui = "replaceitem entity " + Player_In_Event!!.name + " enderchest.0 "
+            }else{
+                command_for_set_item_in_gui = "item replace entity " + Player_In_Event!!.name + " enderchest.0 with "
+            }
+        }
+        if (Bukkit.getBukkitVersion().startsWith("2.")){
+            command_for_set_item_in_gui = "item replace entity " + Player_In_Event!!.name + " enderchest.0 with "
+        }
+    }
+//######################################################################################################################
+//MAIN_UI_SYSTEM
+fun List_Style_GUI(){
+    //Get_Page
+    if (Player_In_Event!!.enderChest.getItem(1) !== null){
+        if (Player_In_Event!!.enderChest.getItem(1)?.itemMeta!!.displayName.contains("▓▩◆GUI_SYSTEM◆▩▓___Current_PAGE_")){
+
+            GUI_Page = Player_In_Event!!.enderChest.getItem(1)?.itemMeta!!.displayName.split("▓▩◆GUI_SYSTEM◆▩▓___Current_PAGE_")[1].toInt()
+        }
+    }
+    menu_gui_1 = Bukkit.createInventory(null, 54, "${GUI_TITLE_FOR_FUNCTION}                                                                                                  ▓▩◆LIST_STYLE_GUI◆▩▓___${GUI_TITLE_FOR_FUNCTION}___▓▩◆GUI_SYSTEM◆▩▓___Current_PAGE_$GUI_Page")
+
+
+    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), command_for_set_item_in_gui + "chain{display:{Name:'{\"text\":\" \"}'}} 1")
+    ITEMSTACK = Player_In_Event!!.enderChest.getItem(0)!!
+    for (i in 0..5){
+        menu_gui_1.setItem(7 + 9 * i, ITEMSTACK)
+    }
+    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), command_for_set_item_in_gui + "player_head{display:{Name:'{\"text\":\"Add GUI\",\"color\":\"green\",\"bold\":true,\"italic\":false}'},SkullOwner:{Id:[I;853408908,-902150958,-1544141899,-531255144],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZmMzE0MzFkNjQ1ODdmZjZlZjk4YzA2NzU4MTA2ODFmOGMxM2JmOTZmNTFkOWNiMDdlZDc4NTJiMmZmZDEifX19\"}]}}} 1")
+    ITEMSTACK = Player_In_Event!!.enderChest.getItem(0)!!
+    menu_gui_1.setItem(8,ITEMSTACK)
+
+    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), command_for_set_item_in_gui + "player_head{display:{Name:'{\"text\":\"Next\",\"color\":\"green\",\"bold\":true,\"italic\":false}'},SkullOwner:{Id:[I;-843111187,-1333246584,-1741403974,2112305085],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTYzMzlmZjJlNTM0MmJhMThiZGM0OGE5OWNjYTY1ZDEyM2NlNzgxZDg3ODI3MmY5ZDk2NGVhZDNiOGFkMzcwIn19fQ==\"}]}}} 1")
+    ITEMSTACK = Player_In_Event!!.enderChest.getItem(0)!!
+    menu_gui_1.setItem(44,ITEMSTACK)
+
+    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), command_for_set_item_in_gui + "player_head{display:{Name:'{\"text\":\"Previous\",\"color\":\"green\",\"bold\":true,\"italic\":false}'},SkullOwner:{Id:[I;-1924008784,1782664081,-1531643574,-11919860],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODU1MGI3Zjc0ZTllZDc2MzNhYTI3NGVhMzBjYzNkMmU4N2FiYjM2ZDRkMWY0Y2E2MDhjZDQ0NTkwY2NlMGIifX19\"}]}}} 1")
+    ITEMSTACK = Player_In_Event!!.enderChest.getItem(0)!!
+    menu_gui_1.setItem(53,ITEMSTACK)
+//load_Object_into_List
+//==================================================================================================================
+    File_Path_1 = "$main_dir/$GUI_TITLE_FOR_FUNCTION.yml"
+    Yml_1 = YamlConfiguration.loadConfiguration(File(File_Path_1))
+
+    if (Yml_1["List"] !== null) {
+        var UUID_IN_List = Yml_1["List"] as ArrayList<String>
+
+        for (i in 0..41){
+            var k = 42 * (GUI_Page - 1) + i
+
+            if (UUID_IN_List.lastIndex >= k ){
+                //GUI_List[k] is GUI_UUID
+                if (GUI_TITLE_FOR_FUNCTION == "GUI_List"){
+
+                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), command_for_set_item_in_gui + "player_head{SkullOwner:{Id:[I;1671180590,-1317191485,-2104336118,-1341907639],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTA5Y2RlMWFmYzk1YTQ3NGQyMjI1NTQwOTdlZDZkMzkxZTdjYzdhZTFmMjAyZmRiZmQyZDZkYmM5ODMwOTM3MCJ9fX0=\"}]}}} 1")
+                    ITEMSTACK = Player_In_Event!!.enderChest.getItem(0)!!
+                    ITEMSTACK_mdf = ITEMSTACK.itemMeta
+
+                    var DIS_NAME = Yml_1[UUID_IN_List[k] + ".display_name"] as ArrayList<String>
+                    ITEMSTACK_mdf?.setDisplayName("" + DIS_NAME[0]) //display for player
+                    ITEMSTACK_mdf?.setLocalizedName("▓▩◆Yml_Path===>" + UUID_IN_List[k] + "◆▩▓") //ID for systenm //Main_UUID
+                    ITEMSTACK.itemMeta = ITEMSTACK_mdf
+                    menu_gui_1.setItem(i + 2*(i/7),ITEMSTACK)
+                }
+            }
+        }
+    }
+//==================================================================================================================
+    Player_In_Event!!.openInventory(menu_gui_1)
+}
+//######################################################################################################################
+@EventHandler
+fun OnClick(e: InventoryClickEvent){
+    Player_In_Event = e.whoClicked as Player
+    var FGG = Player_In_Event!!.inventory.contents
+}
+@EventHandler
+fun onGUI_Drag(e: InventoryDragEvent){
+    Player_In_Event = e.whoClicked as Player
+    var FGG = Player_In_Event!!.inventory.contents
+    e.isCancelled = true
+    Player_In_Event!!.inventory.contents = FGG
+}
+@EventHandler
+fun OnMove(e:PlayerMoveEvent){
+
+    Player_In_Event = e.player
+//Conversation_UI  vvv
+//==================================================================================================================
+    var Vector_TOWARD = Vector((e.to!!.x - e.from.x),(e.to!!.y - e.from.y),(e.to!!.z - e.from.z))
+    var HOR_DIR_VEC = Vector(Player_In_Event!!.location.direction.clone().x,0.0,Player_In_Event!!.location.direction.clone().z)
+    var ANG = Vector_TOWARD.angle(HOR_DIR_VEC) * 57.29577951
+
+    if (!(e.to!!.x == e.from.x && e.to!!.y == e.from.y && e.to!!.z == e.from.z) && Vector_TOWARD.length() >= 0.04){
+        if (ANG >= 0 && ANG < 100){
+
+        }else{
+
+        }
+    }
+//==================================================================================================================
+}
+//######################################################################################################################
+//RPG_ITEM
+
+
+//######################################################################################################################
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

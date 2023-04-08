@@ -1,0 +1,41 @@
+//Yml_setValue((Sync Support))
+
+//Version_Detection
+//Detection of Numeric type
+
+//PLAYER_TAG_IN_PLAYER_DATA
+
+//When_Join_The_Game
+//When_Leave_The_Game
+
+//Save GUI_Surface
+//GUI_RUNNING
+//When_Open_ANY_GUI
+//When_Close_ANY_GUI
+
+//SHIFT_RIGHT_CLICK_PLAYER >>> OPEN_INTERACTION_GUI
+//INTERACTION_GUI_RUNNING
+
+//When_Click_On_Notice_GUI
+
+
+//Confirmation_GUI
+<===>Confirmation_GUI_OF_REMOVE_FRIEND<===>
+
+
+//Add_Friend
+//Remove_Friend
+//Open_Friend_List
+//When_Click_On_Friend_GUI
+//When_Close_Friend_GUI
+
+//Party_System
+//Open_Party_Finder
+//Open_Party_Menu
+//When_Click_On_Party_Finder_GUI
+//When_Click_On_Party_Menu_GUI
+//When_Close_Party_Finder_GUI
+
+//Channel_Setting
+//CHAT_RECORD
+//CHAT_BOX_UPDATE

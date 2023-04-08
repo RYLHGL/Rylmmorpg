@@ -1,0 +1,138 @@
+
+Player_In_Event = cmd_sender
+                    PacketEvents().playerUtils.sendPacket(Player_In_Event,WrappedPacketOutBlockChange((Player_In_Event!!.world), Vector3i(825,96,954),Material.STONE))
+                    for(EntityX in Player_In_Event!!.world.entities){
+                        if(EntityX.scoreboardTags.contains("GG")){
+                            PacketEvents().playerUtils.sendPacket(Player_In_Event,WrappedPacketOutEntityDestroy(EntityX))
+                        }
+
+                    }
+//======================================================================================================================
+Bukkit.getScheduler().scheduleSyncRepeatingTask(this, {
+            Record_Player_Location() }, 0L,2L)
+//======================================================================================================================
+fun startProgress() {
+        val THE_TIMER = Timer()
+
+        THE_TIMER.scheduleAtFixedRate(object : TimerTask() {
+            override fun run() {
+                // do whatever you want
+            }
+        }, 0, 1000)
+
+    }
+
+//======================================================================================================================
+//======================================================================================================================
+object : BukkitRunnable() {
+
+                override fun run() {
+                    for (H in 0..2){
+                        Bukkit.dispatchCommand(Bukkit.getConsoleSender(),"sync server_$H autosync reload")
+                    }
+
+                }
+            }.runTaskLater(this,3L)
+//======================================================================================================================
+object : BukkitRunnable() {
+
+                override fun run() {
+
+                }
+            }.runTaskTimer(this, 0, 1.0.toLong())
+//======================================================================================================================
+object : BukkitRunnable() {
+                override fun run() {
+
+                }
+            }.runTaskTimer(this, 100L, 20L)
+
+//======================================================================================================================
+Bukkit.getScheduler().runTaskLater(this, Runnable {
+                //code
+            }, 3)
+//======================================================================================================================
+Bukkit.getServer().scheduler.scheduleSyncDelayedTask(this,Runnable {
+
+            }, 1)
+
+Bukkit.getServer().scheduler.scheduleSyncRepeatingTask(this, {
+                // put some code here
+            },0,100)
+//======================================================================================================================
+Timer().schedule(object : TimerTask() {
+                    override fun run() {
+                        // your code here
+                    }
+                },5000,4)
+//======================================================================================================================
+Timer("SettingUp", false).schedule(delay_time) {
+
+    }
+//======================================================================================================================
+var timer = Timer()
+    timer.schedule(DELAY,PERIOD){
+
+    }
+//======================================================================================================================
+//======================================================================================================================
+Bukkit.getScheduler().scheduleSyncDelayedTask(this) {
+
+            }
+//======================================================================================================================
+if (!File(main_dir + "/gui/system/GUI_For_RPGEditor.yml").exists()) {
+            var NEW_FILE = this.javaClass.classLoader.getResourceAsStream("Note.txt")!!
+            Files.copy(NEW_FILE, File("$main_dir/Note.txt").toPath(), StandardCopyOption.REPLACE_EXISTING)
+        }
+//======================================================================================================================
+val jarPath = object {}.javaClass.protectionDomain.codeSource.location.toURI().path
+
+//======================================================================================================================
+
+val jar = JarFile(File("$main_dir.jar"))
+        val enumEntries: Enumeration<*> = jar.entries()
+        while (enumEntries.hasMoreElements()) {
+            val file = enumEntries.nextElement() as JarEntry
+            val file_from_path = File("$main_dir/" + file.name)
+            if (file.isDirectory) { // if its a directory, create it
+                file_from_path.mkdir()
+                continue
+            }
+            val `is`: InputStream = jar.getInputStream(file) // get the input stream
+            val fos = FileOutputStream(file_from_path)
+            while (`is`.available() > 0) {  // write contents of 'is' to 'fos'
+                fos.write(`is`.read())
+            }
+            fos.close()
+            `is`.close()
+        }
+        jar.close()
+//======================================================================================================================
+val img = BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB)
+        val g2d = img.createGraphics()
+        val fm = g2d.fontMetrics
+        e.player.sendMessage("" + fm.stringWidth(e.message))
+        g2d.dispose()
+
+//======================================================================================================================
+val text = e.message
+       val font = Font("Arial", Font.PLAIN, 12)
+       val frc = FontRenderContext(AffineTransform(), true, true)
+
+       val textwidth = font.getStringBounds(text, frc).width.toInt()
+       e.player.sendMessage("" + textwidth)
+
+//======================================================================================================================
+if (NumberUtils.isNumber("" + Value)) Yml_1[Key] = NumberFormat.getInstance().parse("" + Value)
+//======================================================================================================================
+
+Files.walk(SRC_PATH).forEach {Files.copy(it, DEST_PATH.resolve(SRC_PATH.relativize(it)), StandardCopyOption.REPLACE_EXISTING)}
+//======================================================================================================================
+
+                            Player_In_Event!!.sendBlockChange(Location(Player_In_Event!!.world, 1.0, 2.0, 3.0), Material.AIR,0)
+//======================================================================================================================
+SORTING
+
+var ALL_ITEM = arrayListOf("UUID_32_XC", "UUID_57_GY", "UUID_19_HY")
+ALL_ITEM.sortBy { it.substringAfter("_").substringBefore("_").toInt() }
+//======================================================================================================================

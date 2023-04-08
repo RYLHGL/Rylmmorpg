@@ -1,0 +1,239 @@
+Surface_UI:
+  Contents:
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":" "}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: c67c759c-5c21-6cba-774c-b993af7be49d
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzUxZWZhZTExODEyYWVlNTg1NTg3YTE3MmE3MjgzNTYxMmRiNmMyZTEwYjNiMGM5YTZkN2M3YmY2ZWZlN2MzNyJ9fX0=
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: CHAIN
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - null
+    - null
+    - null
+    - null
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: CHAIN
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"Create Party","font":"uniform","color":"green","bold":true,"italic":false}'
+        lore:
+          - '{"text":"Click here to Create Party","font":"uniform","color":"gold","bold":true,"italic":false}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 32ddfc8c-ca3a-44d2-a3f6-43b5e055b098
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZmMzE0MzFkNjQ1ODdmZjZlZjk4YzA2NzU4MTA2ODFmOGMxM2JmOTZmNTFkOWNiMDdlZDc4NTJiMmZmZDEifX19
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: CHAIN
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - null
+    - null
+    - null
+    - null
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: CHAIN
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":" "}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: c67c759c-5c21-6cba-774c-b993af7be49d
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzUxZWZhZTExODEyYWVlNTg1NTg3YTE3MmE3MjgzNTYxMmRiNmMyZTEwYjNiMGM5YTZkN2M3YmY2ZWZlN2MzNyJ9fX0=
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: CHAIN
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - null
+    - null
+    - null
+    - null
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: CHAIN
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":" "}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: c67c759c-5c21-6cba-774c-b993af7be49d
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzUxZWZhZTExODEyYWVlNTg1NTg3YTE3MmE3MjgzNTYxMmRiNmMyZTEwYjNiMGM5YTZkN2M3YmY2ZWZlN2MzNyJ9fX0=
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: CHAIN
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - null
+    - null
+    - null
+    - null
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: CHAIN
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":" "}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: c67c759c-5c21-6cba-774c-b993af7be49d
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzUxZWZhZTExODEyYWVlNTg1NTg3YTE3MmE3MjgzNTYxMmRiNmMyZTEwYjNiMGM5YTZkN2M3YmY2ZWZlN2MzNyJ9fX0=
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":" "}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: c67c759c-5c21-6cba-774c-b993af7be49d
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzUxZWZhZTExODEyYWVlNTg1NTg3YTE3MmE3MjgzNTYxMmRiNmMyZTEwYjNiMGM5YTZkN2M3YmY2ZWZlN2MzNyJ9fX0=
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: CHAIN
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - null
+    - null
+    - null
+    - null
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: CHAIN
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"Previous","font":"uniform","color":"green","bold":true,"italic":false}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 18ca284c-c03d-4324-8a5f-cc8a5eccf91f
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTJmMDQyNWQ2NGZkYzg5OTI5MjhkNjA4MTA5ODEwYzEyNTFmZTI0M2Q2MGQxNzViZWQ0MjdjNjUxY2JlIn19fQ==
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":" "}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: c67c759c-5c21-6cba-774c-b993af7be49d
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzUxZWZhZTExODEyYWVlNTg1NTg3YTE3MmE3MjgzNTYxMmRiNmMyZTEwYjNiMGM5YTZkN2M3YmY2ZWZlN2MzNyJ9fX0=
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: CHAIN
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - null
+    - null
+    - null
+    - null
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: CHAIN
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 3120
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"Next","font":"uniform","color":"green","bold":true,"italic":false}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 4025c7e9-cb42-4e67-b520-1004534884fc
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ4NjVhYWUyNzQ2YTliOGU5YTRmZTYyOWZiMDhkMThkMGE5MjUxZTVjY2JlNWZhNzA1MWY1M2VhYjliOTQifX19
+  Size: 54

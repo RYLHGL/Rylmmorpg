@@ -1,0 +1,142 @@
+Surface_UI:
+  Contents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '[{"text":"[","font":"uniform","color":"green","bold":true,"italic":false},{"text":"+","font":"uniform","color":"gold","bold":true,"italic":false},{"text":"]
+        Add Friend","font":"uniform","color":"green","bold":true,"italic":false}]'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 32ddfc8c-ca3a-44d2-a3f6-43b5e055b098
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZmMzE0MzFkNjQ1ODdmZjZlZjk4YzA2NzU4MTA2ODFmOGMxM2JmOTZmNTFkOWNiMDdlZDc4NTJiMmZmZDEifX19
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"Party","font":"uniform","color":"green","bold":true,"italic":false}'
+        lore:
+          - '{"text":"===========================================","font":"uniform","color":"dark_green","bold":false,"italic":false}'
+          - '[{"text":"❮","font":"uniform","color":"dark_purple","bold":false,"italic":false},{"text":"Left-Click","font":"uniform","color":"gold","bold":true,"italic":false},{"text":"❯
+        ","font":"uniform","color":"dark_purple","bold":false,"italic":false},{"text":"to
+        Send Joining Aplication","font":"uniform","color":"green","bold":true,"italic":false}]'
+          - '{"text":"   "}'
+          - '[{"text":"❮","font":"uniform","color":"dark_purple","bold":false,"italic":false},{"text":"Right-Click","font":"uniform","color":"gold","bold":true,"italic":false},{"text":"❯
+        ","font":"uniform","color":"dark_purple","bold":false,"italic":false},{"text":"to
+        Send Invitation","font":"uniform","color":"green","bold":true,"italic":false}]'
+          - '{"text":"===========================================","font":"uniform","color":"dark_green","bold":false,"italic":false}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 4519382e-8969-43a3-92a1-d222897c6b43
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzZjYmFlNzI0NmNjMmM2ZTg4ODU4NzE5OGM3OTU5OTc5NjY2YjRmNWE0MDg4ZjI0ZTI2ZTA3NWYxNDBhZTZjMyJ9fX0=
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: CYAN_BANNER
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: EMERALD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"Trade","font":"uniform","color":"green","bold":true,"italic":false}'
+        lore:
+          - '{"text":"==========================================","font":"uniform","color":"dark_green","bold":false,"italic":false}'
+          - '[{"text":"❮","font":"uniform","color":"dark_purple","bold":false,"italic":false},{"text":"Left/Right-Click","font":"uniform","color":"gold","bold":true,"italic":false},{"text":"❯
+        ","font":"uniform","color":"dark_purple","bold":false,"italic":false},{"text":"to
+        Send Trade offer","font":"uniform","color":"green","bold":true,"italic":false}]'
+          - '{"text":"==========================================","font":"uniform","color":"dark_green","bold":false,"italic":false}'
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"Chat","font":"uniform","color":"green","bold":true,"italic":false}'
+        lore:
+          - '{"text":"============================================","font":"uniform","color":"dark_green","bold":false,"italic":false}'
+          - '[{"text":"❮","font":"uniform","color":"dark_purple","bold":false,"italic":false},{"text":"Left/Right-Click","font":"uniform","color":"gold","bold":true,"italic":false},{"text":"❯
+        ","font":"uniform","color":"dark_purple","bold":false,"italic":false},{"text":"Chat
+        with This Player","font":"uniform","color":"green","bold":true,"italic":false}]'
+          - '{"text":"============================================","font":"uniform","color":"dark_green","bold":false,"italic":false}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: b8872d18-a7ba-44d2-b68e-2c0235061f4a
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQ0MGIwYWNiZjk4YzY3YzU1ZjIwYmMxOWQ5NDkxZGU0OWYzYzhhMjBkZTkwNWUzZmFkNWIzZGU4YjRkYjdiOCJ9fX0=
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"Unknow...","font":"uniform","color":"white","bold":true,"italic":false}'
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"Unknow...","font":"uniform","color":"white","bold":true,"italic":false}'
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"Unknow...","font":"uniform","color":"white","bold":true,"italic":false}'
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+  Size: 54

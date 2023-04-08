@@ -1,0 +1,204 @@
+Surface_UI:
+  Contents:
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"Confirm","font":"uniform","color":"green","bold":true,"italic":false}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 81e9cb25-3fc3-4b41-8fa6-536bf143d560
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDMxMmNhNDYzMmRlZjVmZmFmMmViMGQ5ZDdjYzdiNTVhNTBjNGUzOTIwZDkwMzcyYWFiMTQwNzgxZjVkZmJjNCJ9fX0=
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"Cancel","font":"uniform","color":"red","bold":true,"italic":false}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 5ecfabf0-5253-47b0-a44d-9a0c924081b9
+          properties:
+            - name: textures
+              value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ==
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+    - ==: org.bukkit.inventory.ItemStack
+      v: 2975
+      type: BLACK_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":" "}'
+  Size: 27

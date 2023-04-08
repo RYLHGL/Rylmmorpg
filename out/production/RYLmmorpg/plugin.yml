@@ -1,0 +1,36 @@
+name: Rylmmorpg
+main: PluginFiles.Main
+version: 1.0
+api-version: 1.16
+softdepend: [kotlin-stdlib]
+
+commands:
+  setyml:
+    permission: Rylmmorpg.admin
+  channel:
+    default: true
+  chatbox_update:
+    permission: Rylmmorpg.admin
+  system_message:
+    #system_message add (Player_UUID) (msg_tag) (Alive_Time) (STRING).....
+    #system_message add (Player_UUID) (msg_tag) dummy (STRING).....
+    #system_message remove (Player_UUID) (msg_tag)
+    permission: Rylmmorpg.admin
+  rui:
+    #rui create GUI_FILE_NAME size
+    #rui edit GUI_FILE_NAME (size)
+    permission: Rylmmorpg.admin
+  privatechatselect:
+    default: true
+  interactiongui:
+    default: true
+  party:
+    default: true
+  friend:
+    default: true
+  gmkt:
+    permission: Rylmmorpg.admin
+    permission-message: You don't have <permission>
+  pfi:
+    permission: Rylmmorpg.admin
+    permission-message: You don't have <permission>
